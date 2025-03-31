@@ -32,6 +32,7 @@ Table 1: Comparisons on additional datasets HHAR and WISDM
 | MAPU      | 43.01±3.30 | 64.67±5.42 | 61.25±8.29 | 39.41±11.6 | 74.63±2.06 | 71.09±2.53 | 58.41±9.87 | 31.21±4.48  | 65.98±5.95 | 65.04±11.5 | 57.47±2.82 |
 | TemSR     | 37.69±7.28 | 65.49±9.74 | 65.57±6.17 | 43.64±10.5 | 78.46±9.50 | 64.68±8.98 | 60.84±9.98 | 32.28±2.32  | 64.21±1.99 | 69.10±12.1 | 58.20±3.09 |
 
+
 ![T2](https://github.com/user-attachments/assets/c13b8f71-7ccb-4b42-94e3-f13f06250383)
 Table 2: Comparisons with transformer-based encoder.
 | HAR            |             |             |             |             |             |             |             |             |             |             |            |
@@ -47,6 +48,8 @@ Table 2: Comparisons with transformer-based encoder.
 | Algorithms     | 0→1         | 1→0         | 1→2         | 2→3         | 3→1         | 0→3         | 1→3         | 2→1         | 3→0         | 3→2         | Avg.       |
 | w/ Transformer | 91.01±3.06  | 87.59±6.74  | 78.61±5.83  | 87.35±5.40  | 99.62±0.02  | 99.19±0.06  | 100.0±0.00  | 92.38±6.06  | 79.15±1.93  | 72.73±6.93  | 88.76±4.07 |
 | w/ CNN         | 99.97±0.05  | 87.03±4.05  | 84.47±5.88  | 95.23±3.85  | 100.0±0.00  | 99.95±0.05  | 100.0±0.00  | 96.67±4.21  | 87.17±1.56  | 81.96±5.09  | 93.24±1.83 |
+
+
 
 ![T3](https://github.com/user-attachments/assets/616fd9c8-3302-4f7c-910e-984e39f1aa7b)
 Table 3: Comparisons with additional baselines.
@@ -67,6 +70,8 @@ Table 3: Comparisons with additional baselines.
 | TDA        | 96.78±2.13  | 86.66±7.24  | 82.79±5.41  | 97.37±2.11  | 100.0±0.00  | 99.15±0.12  | 100.0±0.00  | 93.48±5.01  | 84.77±1.77  | 77.91±4.89  | 91.89±2.48 |
 | Ours       | 99.97±0.05  | 87.03±4.05  | 84.47±5.88  | 95.23±3.85  | 100.0±0.00  | 99.95±0.05  | 100.0±0.00  | 96.67±4.21  | 87.17±1.56  | 81.96±5.09  | 93.24±1.83 |
 
+
+
 ![T4](https://github.com/user-attachments/assets/a3a5e93a-d6c3-45e2-b301-c4a3f0d22911)
 Table 4: Comparisons with TSFM.
 | HAR        |             |             |             |             |             |             |             |             |             |             |            |
@@ -86,6 +91,8 @@ Table 4: Comparisons with TSFM.
 | TSFM         | 29.77±5.56  | 73.10±2.12  | 85.61±0.06  | 93.89±1.15  | 98.20±0.23  | 55.83±8.69  | 96.90±0.23  | 92.09±0.06  | 56.43±1.40  | 88.25±0.03  | 77.01±0.31 |
 | Ours       | 99.97±0.05  | 87.03±4.05  | 84.47±5.88  | 95.23±3.85  | 100.0±0.00  | 99.95±0.05  | 100.0±0.00  | 96.67±4.21  | 87.17±1.56  | 81.96±5.09  | 93.24±1.83 |
 
+
+
 ![T5](https://github.com/user-attachments/assets/b5b0b52b-ddbf-472b-a228-0fe24ba70db4)
 Table 5: Comparisons with the method which generates pseudo source domain.
 | HAR        |             |                |             |             |             |             |             |             |             |             |            |
@@ -102,6 +109,8 @@ Table 5: Comparisons with the method which generates pseudo source domain.
 | BAIT       | 83.1±14.69  | 60.51±6.43     | 75.9±12.51  | 95.57±2.85  | 100.0±0.00  | 82.12±15.5  | 100.0±0.00  | 85.12±1.49  | 67.21±3.33  | 83.37±6.34  | 83.29±4.60 |
 | Ours       | 99.97±0.05  | 87.03±4.05     | 84.47±5.88  | 95.23±3.85  | 100.0±0.00  | 99.95±0.05  | 100.0±0.00  | 96.67±4.21  | 87.17±1.56  | 81.96±5.09  | 93.24±1.83 |
 
+
+
 ![T6](https://github.com/user-attachments/assets/2523a539-794f-4e15-9622-627fd9f16e6b)
 Table 6: Results of directly using the generated source-like samples for prediction.
 | HAR        |             |             |             |             |             |             |             |             |             |             |            |
@@ -117,6 +126,8 @@ Table 6: Results of directly using the generated source-like samples for predict
 | Algorithms | 0→1         | 1→0         | 1→2         | 2→3         | 3→1         | 0→3         | 1→3         | 2→1         | 3→0         | 3→2         | Avg.       |
 | SRC-based Pre       | 15.75±8.83  | 20.85±0.00  | 20.85±0.00  | 15.74±8.82  | 15.75±8.83  | 20.31±0.23  | 16.82±0.94  | 20.81±0.93  | 20.84±4.01  | 25.14±0.31  | 19.29±4.66 |
 | Ours       | 99.97±0.05  | 87.03±4.05  | 84.47±5.88  | 95.23±3.85  | 100.0±0.00  | 99.95±0.05  | 100.0±0.00  | 96.67±4.21  | 87.17±1.56  | 81.96±5.09  | 93.24±1.83 |
+
+
 
 ![T7](https://github.com/user-attachments/assets/c7dc7092-3e0f-4ec1-9011-51b234ef8f7c)
 Table 7: Reorganized ablation study
